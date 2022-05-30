@@ -1,0 +1,23 @@
+/* line 1, ../scss/_reset.scss */
+* {
+  font-size: 15px;
+  color: black;
+}
+
+/* line 6, ../scss/_reset.scss */
+body, html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 11, ../scss/_reset.scss */
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../scss/_reset.scss */
+button {
+  border: 0;
+}
