@@ -1,0 +1,17 @@
+@import "./var";
+
+
+.titulo_topo {
+  display: flex;
+  justify-content: center;
+}
+
+.tiutlo-esquerda {
+  margin: 5px 0 0 200px;
+  font-size: 35px;
+}
+
+.sobre_header {
+  display: flex;
+  gap: 30px 0;
+}
