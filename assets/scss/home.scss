@@ -1,17 +1,45 @@
 @import "./var";
 
+.header{
+  background-image: url(../images/desktop/image-hero.jpg);
 
-.titulo_topo {
-  display: flex;
-  justify-content: center;
-}
 
-.tiutlo-esquerda {
-  margin: 5px 0 0 200px;
-  font-size: 35px;
-}
+    .titulos_topo{
+	    display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-.sobre_header {
-  display: flex;
-  gap: 30px 0;
+
+      p{
+        font-size: $f-size-default;
+        font-family: 'Alata', sans-serif;
+        color: $c-white;
+      }
+
+      .sobre_header{
+        display: flex;
+        gap: 30px;
+      }
+    }
+  .text{
+    display: flex;
+    margin-left: 182px;
+    max-width: 100%;
+    margin-top: 20px;
+
+      p{
+        font-size: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: $c-white;
+        border-width: 1px 1px;
+        border-style: solid;
+        border-color: white;
+        text-transform: uppercase;
+        padding: 30px;
+        line-height: 1.3;
+        width: 40%;
+        height: 175px;
+      }
+  }
+
 }
