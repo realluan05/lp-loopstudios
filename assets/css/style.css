@@ -1,23 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 /* line 1, ../scss/_reset.scss */
 * {
+  font-family: 'Alata', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
   color: black;
 }
 
-/* line 6, ../scss/_reset.scss */
+/* line 7, ../scss/_reset.scss */
 body, html {
   box-sizing: border-box;
   margin: 0;
 }
 
-/* line 11, ../scss/_reset.scss */
+/* line 12, ../scss/_reset.scss */
 ul, ol, li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 17, ../scss/_reset.scss */
+/* line 18, ../scss/_reset.scss */
 button {
   border: 0;
+}
+
+/* line 22, ../scss/_reset.scss */
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
 }
