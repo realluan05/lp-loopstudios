@@ -407,7 +407,12 @@
     h2{
       font-size: 40px;
     }
-  
+  }
+
+  @include bp(min-width, 1200px) {
+    .menu_mobile{
+      display: none;
+    }
   }
 }
 

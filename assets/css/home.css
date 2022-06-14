@@ -1,28 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-/* line 3, ../scss/home.scss */
+/* line 4, ../scss/home.scss */
 .header {
   background: url(../images/desktop/image-hero.jpg) no-repeat;
   background-size: cover;
   max-width: 100%;
   padding-bottom: 72px;
   margin-bottom: 50px;
+  /*MOBILE*/
 }
-/* line 11, ../scss/home.scss */
+/* line 12, ../scss/home.scss */
 .header .content {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
 }
-/* line 17, ../scss/home.scss */
+/* line 18, ../scss/home.scss */
 .header .logo {
   padding: 30px 0;
 }
-/* line 21, ../scss/home.scss */
+/* line 22, ../scss/home.scss */
 .header .nav {
   padding: 30px 0;
 }
-/* line 25, ../scss/home.scss */
+/* line 26, ../scss/home.scss */
 .header ul {
   display: flex;
   gap: 20px;
@@ -31,7 +32,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 34, ../scss/home.scss */
+/* line 35, ../scss/home.scss */
 .header li {
   list-style: none;
   margin: 0;
@@ -39,17 +40,17 @@
   font-family: 'Alata', sans-serif;
   font-size: 15px;
 }
-/* line 42, ../scss/home.scss */
+/* line 43, ../scss/home.scss */
 .header li:hover {
   cursor: pointer;
   border-bottom: solid 2px white;
   opacity: 1;
 }
-/* line 48, ../scss/home.scss */
+/* line 49, ../scss/home.scss */
 .header .text {
   padding-top: 20px;
 }
-/* line 51, ../scss/home.scss */
+/* line 52, ../scss/home.scss */
 .header .text p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 80px;
@@ -59,68 +60,142 @@
   border-width: 1px 1px;
   border-style: solid;
   border-color: white;
-  width: 700px;
+  max-width: 700px;
+}
+@media screen and (max-width: 768px) {
+  /* line 4, ../scss/home.scss */
+  .header {
+    background: url(../images/mobile/image-hero.jpg) no-repeat;
+    background-size: cover;
+    min-height: 750px;
+  }
+  /* line 72, ../scss/home.scss */
+  .header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 77, ../scss/home.scss */
+  .header .content .nav {
+    display: none;
+  }
+  /* line 82, ../scss/home.scss */
+  .header .text {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  /* line 87, ../scss/home.scss */
+  .header .text p {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 95, ../scss/home.scss */
+  .header .content .menu_mobile {
+    display: none;
+  }
 }
 
-/* line 65, ../scss/home.scss */
+/* line 104, ../scss/home.scss */
 .session_1 {
   position: relative;
   padding-top: 50px;
+  /*MOBILE*/
 }
-/* line 69, ../scss/home.scss */
+/* line 108, ../scss/home.scss */
 .session_1 .logo {
   max-width: 100%;
 }
-/* line 73, ../scss/home.scss */
-.session_1 .text {
-  position: absolute;
-  right: 73px;
-  bottom: -15px;
-  background: #fff;
-  z-index: 5;
-  padding: 125px 0 0 77px;
+@media screen and (min-width: 1200px) {
+  /* line 113, ../scss/home.scss */
+  .session_1 .text {
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+    max-width: 500px;
+    right: -39px;
+    bottom: -81px;
+    padding: 67px;
+  }
 }
-/* line 82, ../scss/home.scss */
+/* line 124, ../scss/home.scss */
 .session_1 h1 {
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   margin: 0;
 }
-/* line 89, ../scss/home.scss */
+/* line 131, ../scss/home.scss */
 .session_1 p {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
   color: #8c8c8c;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  /* line 141, ../scss/home.scss */
+  .session_1 .logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  /* line 147, ../scss/home.scss */
+  .session_1 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 152, ../scss/home.scss */
+  .session_1 .text h1 {
+    font-weight: lighter;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  /* line 158, ../scss/home.scss */
+  .session_1 .text p {
+    text-align: center;
+    max-width: 400px;
+    line-height: 1.8;
+    padding: 10px;
+    margin: 0;
+  }
 }
 
-/* line 96, ../scss/home.scss */
+/* line 169, ../scss/home.scss */
 .session_2 {
   margin-top: 50px;
+  /*MOBILE*/
 }
-/* line 100, ../scss/home.scss */
+/* line 173, ../scss/home.scss */
 .session_2 .content {
   display: flex;
   justify-content: space-between;
 }
-/* line 105, ../scss/home.scss */
+/* line 178, ../scss/home.scss */
 .session_2 .text_1 {
   display: flex;
   align-items: center;
 }
-/* line 110, ../scss/home.scss */
+/* line 183, ../scss/home.scss */
 .session_2 .text_2 {
   display: flex;
   align-items: center;
 }
-/* line 115, ../scss/home.scss */
+@media screen and (max-width: 768px) {
+  /* line 183, ../scss/home.scss */
+  .session_2 .text_2 {
+    display: none;
+  }
+}
+/* line 193, ../scss/home.scss */
 .session_2 h2 {
   font-size: 50px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 122, ../scss/home.scss */
+/* line 200, ../scss/home.scss */
 .session_2 p {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
@@ -135,19 +210,19 @@
   letter-spacing: 3px;
   cursor: pointer;
 }
-/* line 137, ../scss/home.scss */
+/* line 215, ../scss/home.scss */
 .session_2 .imagens_col1 {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
 }
-/* line 143, ../scss/home.scss */
+/* line 222, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_1 {
   position: relative;
   cursor: pointer;
 }
-/* line 147, ../scss/home.scss */
+/* line 226, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_1 p {
   position: absolute;
   width: 200px;
@@ -162,12 +237,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 163, ../scss/home.scss */
+/* line 242, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_2 {
   position: relative;
   cursor: pointer;
 }
-/* line 167, ../scss/home.scss */
+/* line 246, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_2 p {
   position: absolute;
   width: 200px;
@@ -182,12 +257,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 183, ../scss/home.scss */
+/* line 262, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_3 {
   position: relative;
   cursor: pointer;
 }
-/* line 187, ../scss/home.scss */
+/* line 266, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_3 p {
   position: absolute;
   width: 200px;
@@ -202,12 +277,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 206, ../scss/home.scss */
+/* line 282, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_4 {
   position: relative;
   cursor: pointer;
 }
-/* line 210, ../scss/home.scss */
+/* line 286, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_4 p {
   position: absolute;
   width: 200px;
@@ -222,18 +297,24 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 227, ../scss/home.scss */
+@media screen and (max-width: 768px) {
+  /* line 215, ../scss/home.scss */
+  .session_2 .imagens_col1 {
+    display: none;
+  }
+}
+/* line 307, ../scss/home.scss */
 .session_2 .imagens_col2 {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-/* line 232, ../scss/home.scss */
+/* line 312, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_5 {
   position: relative;
   cursor: pointer;
 }
-/* line 236, ../scss/home.scss */
+/* line 316, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_5 p {
   position: absolute;
   width: 200px;
@@ -248,12 +329,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 252, ../scss/home.scss */
+/* line 332, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_6 {
   position: relative;
   cursor: pointer;
 }
-/* line 256, ../scss/home.scss */
+/* line 336, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_6 p {
   position: absolute;
   width: 200px;
@@ -268,12 +349,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 272, ../scss/home.scss */
+/* line 352, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_7 {
   position: relative;
   cursor: pointer;
 }
-/* line 276, ../scss/home.scss */
+/* line 356, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_7 p {
   position: absolute;
   width: 200px;
@@ -288,12 +369,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 292, ../scss/home.scss */
+/* line 372, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_8 {
   position: relative;
   cursor: pointer;
 }
-/* line 296, ../scss/home.scss */
+/* line 376, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_8 p {
   position: absolute;
   width: 200px;
@@ -308,52 +389,70 @@
   text-align: left;
   line-height: 1.1;
 }
+@media screen and (max-width: 768px) {
+  /* line 307, ../scss/home.scss */
+  .session_2 .imagens_col2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 401, ../scss/home.scss */
+  .session_2 .content {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  /* line 407, ../scss/home.scss */
+  .session_2 h2 {
+    font-size: 40px;
+  }
+}
 
-/* line 314, ../scss/home.scss */
+/* line 414, ../scss/home.scss */
 .footer {
   background-color: black;
   margin-top: 50px;
 }
-/* line 318, ../scss/home.scss */
+/* line 418, ../scss/home.scss */
 .footer .linha_1 {
   display: flex;
   justify-content: space-between;
 }
-/* line 322, ../scss/home.scss */
+/* line 422, ../scss/home.scss */
 .footer .linha_1 .text {
   padding: 30px 0;
 }
-/* line 326, ../scss/home.scss */
+/* line 426, ../scss/home.scss */
 .footer .linha_1 .logos {
   padding: 30px 0;
 }
-/* line 329, ../scss/home.scss */
+/* line 429, ../scss/home.scss */
 .footer .linha_1 .logos ul {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-/* line 334, ../scss/home.scss */
+/* line 434, ../scss/home.scss */
 .footer .linha_1 .logos ul li {
   border: 1px solid transparent;
   padding-bottom: 10px;
 }
-/* line 339, ../scss/home.scss */
+/* line 439, ../scss/home.scss */
 .footer .linha_1 .logos ul li:hover {
   cursor: pointer;
   border-bottom: solid 2px white;
   opacity: 1;
 }
-/* line 348, ../scss/home.scss */
+/* line 448, ../scss/home.scss */
 .footer .linha_2 {
   display: flex;
   justify-content: space-between;
 }
-/* line 353, ../scss/home.scss */
+/* line 453, ../scss/home.scss */
 .footer .linha_2 .lista {
   padding: 30px 0;
 }
-/* line 356, ../scss/home.scss */
+/* line 456, ../scss/home.scss */
 .footer .linha_2 .lista ul {
   display: flex;
   gap: 20px;
@@ -362,7 +461,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 365, ../scss/home.scss */
+/* line 465, ../scss/home.scss */
 .footer .linha_2 .lista ul li {
   list-style: none;
   margin: 0;
@@ -371,18 +470,18 @@
   font-size: 15px;
   padding-bottom: 10px;
 }
-/* line 374, ../scss/home.scss */
+/* line 474, ../scss/home.scss */
 .footer .linha_2 .lista ul li:hover {
   cursor: pointer;
   border-bottom: solid 2px white;
   opacity: 1;
 }
-/* line 382, ../scss/home.scss */
+/* line 482, ../scss/home.scss */
 .footer .linha_2 .direitos {
   display: flex;
   align-items: center;
 }
-/* line 386, ../scss/home.scss */
+/* line 486, ../scss/home.scss */
 .footer .linha_2 .direitos p {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
