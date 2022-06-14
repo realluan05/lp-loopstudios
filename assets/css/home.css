@@ -2,26 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 /* line 3, ../scss/home.scss */
 .header {
-  background-image: url(../images/desktop/image-hero.jpg);
+  background: url(../images/desktop/image-hero.jpg) no-repeat;
+  background-size: cover;
   max-width: 100%;
   padding-bottom: 72px;
   margin-bottom: 50px;
 }
-/* line 10, ../scss/home.scss */
+/* line 11, ../scss/home.scss */
 .header .content {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
 }
-/* line 16, ../scss/home.scss */
+/* line 17, ../scss/home.scss */
 .header .logo {
   padding: 30px 0;
 }
-/* line 20, ../scss/home.scss */
+/* line 21, ../scss/home.scss */
 .header .nav {
   padding: 30px 0;
 }
-/* line 24, ../scss/home.scss */
+/* line 25, ../scss/home.scss */
 .header ul {
   display: flex;
   gap: 20px;
@@ -30,7 +31,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 33, ../scss/home.scss */
+/* line 34, ../scss/home.scss */
 .header li {
   list-style: none;
   margin: 0;
@@ -38,17 +39,17 @@
   font-family: 'Alata', sans-serif;
   font-size: 15px;
 }
-/* line 41, ../scss/home.scss */
+/* line 42, ../scss/home.scss */
 .header li:hover {
   cursor: pointer;
   border-bottom: solid 2px white;
   opacity: 1;
 }
-/* line 47, ../scss/home.scss */
+/* line 48, ../scss/home.scss */
 .header .text {
   padding-top: 20px;
 }
-/* line 50, ../scss/home.scss */
+/* line 51, ../scss/home.scss */
 .header .text p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 80px;
@@ -61,65 +62,65 @@
   width: 700px;
 }
 
-/* line 64, ../scss/home.scss */
+/* line 65, ../scss/home.scss */
 .session_1 {
   position: relative;
   padding-top: 50px;
 }
-/* line 68, ../scss/home.scss */
+/* line 69, ../scss/home.scss */
 .session_1 .logo {
   max-width: 100%;
 }
-/* line 72, ../scss/home.scss */
+/* line 73, ../scss/home.scss */
 .session_1 .text {
   position: absolute;
   right: 73px;
-  bottom: 0;
+  bottom: -15px;
   background: #fff;
   z-index: 5;
   padding: 125px 0 0 77px;
 }
-/* line 81, ../scss/home.scss */
+/* line 82, ../scss/home.scss */
 .session_1 h1 {
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   margin: 0;
 }
-/* line 88, ../scss/home.scss */
+/* line 89, ../scss/home.scss */
 .session_1 p {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
   color: #8c8c8c;
 }
 
-/* line 95, ../scss/home.scss */
+/* line 96, ../scss/home.scss */
 .session_2 {
   margin-top: 50px;
 }
-/* line 99, ../scss/home.scss */
+/* line 100, ../scss/home.scss */
 .session_2 .content {
   display: flex;
   justify-content: space-between;
 }
-/* line 104, ../scss/home.scss */
+/* line 105, ../scss/home.scss */
 .session_2 .text_1 {
   display: flex;
   align-items: center;
 }
-/* line 109, ../scss/home.scss */
+/* line 110, ../scss/home.scss */
 .session_2 .text_2 {
   display: flex;
   align-items: center;
 }
-/* line 114, ../scss/home.scss */
+/* line 115, ../scss/home.scss */
 .session_2 h2 {
   font-size: 50px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 121, ../scss/home.scss */
+/* line 122, ../scss/home.scss */
 .session_2 p {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
@@ -134,18 +135,19 @@
   letter-spacing: 3px;
   cursor: pointer;
 }
-/* line 136, ../scss/home.scss */
+/* line 137, ../scss/home.scss */
 .session_2 .imagens_col1 {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
 }
-/* line 142, ../scss/home.scss */
+/* line 143, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_1 {
   position: relative;
+  cursor: pointer;
 }
-/* line 145, ../scss/home.scss */
+/* line 147, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_1 p {
   position: absolute;
   width: 200px;
@@ -160,11 +162,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 161, ../scss/home.scss */
+/* line 163, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_2 {
   position: relative;
+  cursor: pointer;
 }
-/* line 164, ../scss/home.scss */
+/* line 167, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_2 p {
   position: absolute;
   width: 200px;
@@ -179,11 +182,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 180, ../scss/home.scss */
+/* line 183, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_3 {
   position: relative;
+  cursor: pointer;
 }
-/* line 183, ../scss/home.scss */
+/* line 187, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_3 p {
   position: absolute;
   width: 200px;
@@ -198,11 +202,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 202, ../scss/home.scss */
+/* line 206, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_4 {
   position: relative;
+  cursor: pointer;
 }
-/* line 205, ../scss/home.scss */
+/* line 210, ../scss/home.scss */
 .session_2 .imagens_col1 .imagem_4 p {
   position: absolute;
   width: 200px;
@@ -217,17 +222,18 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 222, ../scss/home.scss */
+/* line 227, ../scss/home.scss */
 .session_2 .imagens_col2 {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-/* line 227, ../scss/home.scss */
+/* line 232, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_5 {
   position: relative;
+  cursor: pointer;
 }
-/* line 230, ../scss/home.scss */
+/* line 236, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_5 p {
   position: absolute;
   width: 200px;
@@ -242,11 +248,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 246, ../scss/home.scss */
+/* line 252, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_6 {
   position: relative;
+  cursor: pointer;
 }
-/* line 249, ../scss/home.scss */
+/* line 256, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_6 p {
   position: absolute;
   width: 200px;
@@ -261,11 +268,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 265, ../scss/home.scss */
+/* line 272, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_7 {
   position: relative;
+  cursor: pointer;
 }
-/* line 268, ../scss/home.scss */
+/* line 276, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_7 p {
   position: absolute;
   width: 200px;
@@ -280,11 +288,12 @@
   text-align: left;
   line-height: 1.1;
 }
-/* line 284, ../scss/home.scss */
+/* line 292, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_8 {
   position: relative;
+  cursor: pointer;
 }
-/* line 287, ../scss/home.scss */
+/* line 296, ../scss/home.scss */
 .session_2 .imagens_col2 .imagem_8 p {
   position: absolute;
   width: 200px;
@@ -298,4 +307,84 @@
   color: white;
   text-align: left;
   line-height: 1.1;
+}
+
+/* line 314, ../scss/home.scss */
+.footer {
+  background-color: black;
+  margin-top: 50px;
+}
+/* line 318, ../scss/home.scss */
+.footer .linha_1 {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 322, ../scss/home.scss */
+.footer .linha_1 .text {
+  padding: 30px 0;
+}
+/* line 326, ../scss/home.scss */
+.footer .linha_1 .logos {
+  padding: 30px 0;
+}
+/* line 329, ../scss/home.scss */
+.footer .linha_1 .logos ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* line 334, ../scss/home.scss */
+.footer .linha_1 .logos ul li {
+  border: 1px solid transparent;
+  padding-bottom: 10px;
+}
+/* line 339, ../scss/home.scss */
+.footer .linha_1 .logos ul li:hover {
+  cursor: pointer;
+  border-bottom: solid 2px white;
+  opacity: 1;
+}
+/* line 348, ../scss/home.scss */
+.footer .linha_2 {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 353, ../scss/home.scss */
+.footer .linha_2 .lista {
+  padding: 30px 0;
+}
+/* line 356, ../scss/home.scss */
+.footer .linha_2 .lista ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 365, ../scss/home.scss */
+.footer .linha_2 .lista ul li {
+  list-style: none;
+  margin: 0;
+  color: white;
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+/* line 374, ../scss/home.scss */
+.footer .linha_2 .lista ul li:hover {
+  cursor: pointer;
+  border-bottom: solid 2px white;
+  opacity: 1;
+}
+/* line 382, ../scss/home.scss */
+.footer .linha_2 .direitos {
+  display: flex;
+  align-items: center;
+}
+/* line 386, ../scss/home.scss */
+.footer .linha_2 .direitos p {
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  color: #8c8c8c;
 }

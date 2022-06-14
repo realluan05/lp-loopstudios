@@ -1,0 +1,20 @@
+@import './var';
+
+@mixin bp($feature, $value)
+{
+    @if $feature == 'min-width' {
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    } @else if $feature == 'max-width' {
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+// header {
+//     @include bp(max-width, 770px) {
+//         
+//     }
+// }
