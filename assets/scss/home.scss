@@ -261,6 +261,13 @@
     cursor: pointer;
   }
 
+  p:hover{
+    background-color: $c-white;
+    color: $c-black;
+  }
+
+
+
   .imagens_col1 {
 
     display: flex;
