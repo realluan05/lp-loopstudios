@@ -5,9 +5,8 @@
   background: url(../images/desktop/image-hero.jpg) no-repeat;
   background-size: cover;
   max-width: 100%;
-  padding-bottom: 72px;
   margin-bottom: 50px;
-
+  min-height: 650px;
 
   .content {
     display: flex;
@@ -423,52 +422,26 @@
       align-items: center;
       gap: 30px;
 
-      .img_1 {
-        img {
-          max-width: 100%;
-        }
-      }
+      .img_1 , .img_2 , .img_3 , .img_4 , .img_5 , .img_6 , .img_7 , .img_8{
 
-      .img_2 {
-        img {
-          max-width: 100%;
-        }
-      }
+        position: relative;
 
-      .img_3 {
-        img {
+        img{
           max-width: 100%;
         }
-      }
-
-      .img_4 {
-        img {
-          max-width: 100%;
+        
+        p{
+          position: absolute;
+          bottom: 16px;
+          left: 13px;
+          background-color: transparent;
+          border: none;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 17px;
+          text-align: left;
+          line-height: 1.2;
         }
-      }
-
-      .img_5 {
-        img {
-          max-width: 100%;
-        }
-      }
-
-      .img_6 {
-        img {
-          max-width: 100%;
-        }
-      }
-
-      .img_7 {
-        img {
-          max-width: 100%;
-        }
-      }
-
-      .img_8 {
-        img {
-          max-width: 100%;
-        }
+      
       }
 
 
@@ -480,6 +453,10 @@
 .footer {
   background-color: $c-black;
   margin-top: 50px;
+
+  @include bp(max-width, 768px) {
+    display: none;
+  }
 
   .linha_1 {
     display: flex;
@@ -555,5 +532,70 @@
         color: $c-dark-gray
       }
     }
+  }
+}
+
+.menu_mobilefooter{
+  
+  @include bp(min-width, 1200px) {
+    display: none;
+  }
+
+  @include bp(max-width, 768px) {
+
+    background-color: $c-black;
+    margin-top: 30px;
+  
+    .linha_1{
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    }
+  
+    .linha_2{
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    
+      ul{
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li{
+          color: $c-white;
+          font-size: $f-size-default;
+          font-family: 'Alata', sans-serif;
+          margin: 0;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+    
+    }
+
+    .linha_3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+  
+    .linha_4{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    
+      p{
+        color: $c-white;
+        font-size: $f-size-default;
+        font-family: 'Alata', sans-serif;
+      }
+    
+    
+    }
+  
   }
 }
